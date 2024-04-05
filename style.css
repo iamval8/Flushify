@@ -1215,23 +1215,14 @@ height: 0;
     content: "material-symbols-outlined hover-icon" "arrow_forward";
 }
 
-
-
-
 section h2, section h3 {
     color: black;
 }
-
-
-
 
 .btn-green {
     background-color: green;
     color: white;
 }
-
-
-
 
 .btn-red {
     background-color: red;
