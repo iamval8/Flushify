@@ -371,10 +371,11 @@ height: 0;
 /*--------------------------------------------------------------
 #LOGIN Button
 --------------------------------------------------------------*/
-.login .body {font-family: Arial, Helvetica, sans-serif;}
+#login .body {font-family: Arial, Helvetica, sans-serif;}
+
 
 /* Full-width input fields */
-.login .input[type=text], .input[type=password] {
+input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -384,50 +385,51 @@ height: 0;
 }
 
 /* Set a style for all buttons */
-.login .loginbtn {
-    background-color: #3f6ce0;
+button {
+    background-color: #012743;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
     width: 100%;
+    border-radius: 20px;
 }
 
-.login .loginbtn:hover {
+button:hover {
     opacity: 0.8;
 }
 
 /* Extra styles for the cancel button */
-.login .cancelbtn {
+.cancelbtn {
     width: auto;
     padding: 10px 18px;
     background-color: #f44336;
 }
 
 /* Center the image and position the close button */
-.login .imgcontainer {
+.imgcontainer {
     text-align: center;
     margin: 24px 0 12px 0;
     position: relative;
 }
 
-.login .img.avatar {
+img.avatar {
     width: 40%;
     border-radius: 50%;
 }
 
-.login .container {
+.container {
     padding: 16px;
 }
 
-.login .span.psw {
+span.psw {
     float: right;
     padding-top: 16px;
 }
 
 /* The Modal (background) */
-.login .modal {
+.modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -442,7 +444,7 @@ height: 0;
 }
 
 /* Modal Content/Box */
-.login .modal-content {
+.modal-content {
     background-color: #fefefe;
     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
@@ -450,7 +452,7 @@ height: 0;
 }
 
 /* The Close Button (x) */
-.login .close {
+.close {
     position: absolute;
     right: 25px;
     top: 0;
@@ -459,39 +461,39 @@ height: 0;
     font-weight: bold;
 }
 
-.login .close:hover,
-.login .close:focus {
+.close:hover,
+.close:focus {
     color: red;
     cursor: pointer;
 }
 
 /* Add Zoom Animation */
-.login .animate {
+.animate {
     -webkit-animation: animatezoom 0.6s;
     animation: animatezoom 0.6s
 }
 
-.login @-webkit-keyframes animatezoom {
-           from {-webkit-transform: scale(0)}
-           to {-webkit-transform: scale(1)}
-       }
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
 
-.login @keyframes animatezoom {
-           from {transform: scale(0)}
-           to {transform: scale(1)}
-       }
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
 
 /* Change styles for span and cancel button on extra small screens */
-.login @media screen and (max-width: 300px) {
+@media screen and (max-width: 300px) {
     span.psw {
         display: block;
         float: none;
     }
-
     .cancelbtn {
         width: 100%;
     }
 }
+
 
 /*--------------------------------------------------------------
 #LOGIN PAGE
