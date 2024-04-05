@@ -12,9 +12,9 @@ h1, h3, h4 {
 }
 
 .navbar {
-    background-color: #ffffff; /* Dark blue color for the navbar */
+    background-color: #ffffff;
     color: #000000;
-    box-shadow: 0 2px 4px rgba(0,0,0,.3); /* Adds depth with a subtle shadow */
+    box-shadow: 0 2px 4px rgba(0,0,0,.3);
     min-height: 30px;
 }
 
@@ -22,17 +22,149 @@ h1, h3, h4 {
     background-color: royalblue;
     height: 30px; /* Adjust this value as needed */
 }
-
 .nav-link {
-    color: royalblue;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 20px;
+    font-weight: bold;
 }
-
+nav-item{
+    color: #012744;
+}
 .nav-link:hover {
     color: darkblue;
 }
 
 /*--------------------------------------------------------------
-                        SECTION CODE
+#LOGIN Button
+--------------------------------------------------------------*/
+#login .body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #012743;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 20px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+/*--------------------------------------------------------------
+                       SECTION CODE
 --------------------------------------------------------------*/
 
 .section-bg {
@@ -62,7 +194,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-                         BUTTON CODE
+                        BUTTON CODE
 --------------------------------------------------------------*/
 
 .btn-primary {
@@ -87,6 +219,7 @@ section {
     }
 }
 
+
 .btn-home {
     font-family: 'Montserrat', sans-serif;
     border-radius: 25px;
@@ -109,13 +242,16 @@ section {
     content: "material-symbols-outlined hover-icon" "arrow_forward";
 }
 
+
 .hover-icon {
     visibility: hidden;
 }
 
+
 .hover-icon:hover {
     visibility: visible;
 }
+
 
 .container {
     max-width: 1200px; /* Adjust as needed */
@@ -123,10 +259,12 @@ section {
     padding: 20px; /* Add padding to the container */
 }
 
+
 .img-fluid {
     max-width: 100%;
     height: auto;
 }
+
 
 @media (max-width: 768px) {
     .navbar {
@@ -141,14 +279,6 @@ section {
 height: 0;
     overflow: hidden;
 }
-.google-maps iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100% !important;
-    height: 100% !important;
-}
-
 
 /*--------------------------------------------------------------
 # Reasons for this app
@@ -159,6 +289,7 @@ height: 0;
     padding-top: 50px;
     margin-top: 0;
 }
+
 
 .reasons .icon-box {
     box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
@@ -174,6 +305,7 @@ height: 0;
     margin-bottom: 20px;
 }
 
+
 .reasons .h4 {
     box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
     padding: 50px 30px;
@@ -182,15 +314,18 @@ height: 0;
     cursor: default;
 }
 
+
 .reasons .icon-box .icon {
     margin-bottom: 10px;
 }
+
 
 .reasons .icon-box .icon i {
     color: #007bff;
     font-size: 36px;
     transition: 0.3s;
 }
+
 
 .reasons .icon-box h4 {
     font-weight: 500;
@@ -200,25 +335,32 @@ height: 0;
     text-align: center;
 }
 
+
 .reasons .icon-box h4 a {
     color: #003cff;
     transition: ease-in-out 0.3s;
 }
+
 
 .reasons .icon-box p {
     line-height: 24px;
     font-size: 14px;
     margin-bottom: 0;
 
+
 }
+
 
 .reasons .icon-box:hover {
     transform: translateY(-10px);
 }
 
+
 .reasons .icon-box:hover h4 a {
     color: #278eff;
 }
+
+
 
 
 /*--------------------------------------------------------------
@@ -231,7 +373,6 @@ height: 0;
 #login .h2{
     color: black;
 }
-
 
 /*--------------------------------------------------------------
 # Status Boxes
@@ -248,9 +389,7 @@ height: 0;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15px;
-
     position: relative;
-
 }
 
 .status .h4 {
@@ -288,12 +427,12 @@ height: 0;
     line-height: 24px;
     font-size: 14px;
     margin-bottom: 0;
-
 }
 
 .status .icon-box:hover {
     transform: translateY(-10px);
 }
+
 
 .status .icon-box:hover h4 a {
     color: #278eff;
@@ -304,10 +443,12 @@ height: 0;
     background-color: white;
 }
 
+
 /* Green color */
 .status .icon-box.btn-green {
     background-color: green;
 }
+
 
 /* Red color */
 .status .icon-box.btn-red {
@@ -340,6 +481,7 @@ height: 0;
     }
 }
 
+
 .btn-floors {
     font-family: 'Montserrat', sans-serif;
     border-radius: 25px;
@@ -354,148 +496,27 @@ height: 0;
     font-size: 30px;
     font-weight: bolder;
     align-items: center;
-
 }
+
 .btn-floors:hover {
     animation: pulse 1s infinite;
     content: "material-symbols-outlined hover-icon" "arrow_forward";
 }
 
+
 .btn-container .hover-icon {
     visibility: hidden;
 }
 
+
 .btn-container:hover .hover-icon {
     visibility: visible;
-}
-/*--------------------------------------------------------------
-#LOGIN Button
---------------------------------------------------------------*/
-.login .body {font-family: Arial, Helvetica, sans-serif;}
-
-/* Full-width input fields */
-.login .input[type=text], .input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-
-/* Set a style for all buttons */
-.login .loginbtn {
-    background-color: #3f6ce0;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-}
-
-.login .loginbtn:hover {
-    opacity: 0.8;
-}
-
-/* Extra styles for the cancel button */
-.login .cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
-}
-
-/* Center the image and position the close button */
-.login .imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-    position: relative;
-}
-
-.login .img.avatar {
-    width: 40%;
-    border-radius: 50%;
-}
-
-.login .container {
-    padding: 16px;
-}
-
-.login .span.psw {
-    float: right;
-    padding-top: 16px;
-}
-
-/* The Modal (background) */
-.login .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    padding-top: 60px;
-}
-
-/* Modal Content/Box */
-.login .modal-content {
-    background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button (x) */
-.login .close {
-    position: absolute;
-    right: 25px;
-    top: 0;
-    color: #000;
-    font-size: 35px;
-    font-weight: bold;
-}
-
-.login .close:hover,
-.login .close:focus {
-    color: red;
-    cursor: pointer;
-}
-
-/* Add Zoom Animation */
-.login .animate {
-    -webkit-animation: animatezoom 0.6s;
-    animation: animatezoom 0.6s
-}
-
-.login @-webkit-keyframes animatezoom {
-           from {-webkit-transform: scale(0)}
-           to {-webkit-transform: scale(1)}
-       }
-
-.login @keyframes animatezoom {
-           from {transform: scale(0)}
-           to {transform: scale(1)}
-       }
-
-/* Change styles for span and cancel button on extra small screens */
-.login @media screen and (max-width: 300px) {
-    span.psw {
-        display: block;
-        float: none;
-    }
-
-    .cancelbtn {
-        width: 100%;
-    }
 }
 
 /*--------------------------------------------------------------
 #LOGIN PAGE
 --------------------------------------------------------------*/
+
 
 @keyframes pulse {
     0% {
@@ -512,6 +533,7 @@ height: 0;
         color: #110000;
     }
 }
+
 
 .btn-login {
     font-family: 'Montserrat', sans-serif;
@@ -536,14 +558,17 @@ height: 0;
     content: "material-symbols-outlined hover-icon" "arrow_forward";
 }
 
+
 section h2, section h3 {
     color: black;
 }
+
 
 .btn-green {
     background-color: green;
     color: white;
 }
+
 
 .btn-red {
     background-color: red;
@@ -554,18 +579,455 @@ section h2, section h3 {
     color: #3f6ce0; /* Adjust the color as needed */
 }
 
-/* Optional: Additional styling for the navbar */
-.navbar {
-    /* Add your custom styles here */
+/*--------------------------------------------------------------
+                       SECTION CODE
+--------------------------------------------------------------*/
+
+
+.section-bg {
+    background-color: #ffffff;
+    margin-top: 100px;
 }
 
-/* Styles for login button inside nav-item */
-.nav-item .loginbtn {
-    border: none;
-    background: none;
+
+section {
+    padding-bottom: 100px;
+    padding-top: 50px;
+    overflow: hidden;
 }
 
-/* Ensure the links in the navbar have standard link appearance */
-.nav-link {
-    cursor: pointer;
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+
+#why{
+    color: Black;
+}
+
+
+/*--------------------------------------------------------------
+                        BUTTON CODE
+--------------------------------------------------------------*/
+
+
+.btn-primary {
+    background-color: #007bff; /* Blue buttons */
+    border: none; /* Cleaner look without border */
+    box-shadow: 0 2px 4px rgba(0,0,0,.2); /* Subtle shadow for depth */
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        background-color: #00fbfc;
+        color: #000000;
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+        background-color: #00fbfc;
+        color: #110000;
+    }
+}
+
+
+.btn-home {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 25px;
+    background-color: #ffffff; /* Blue buttons */
+    border: none; /* Cleaner look without border */
+    box-shadow: 0 2px 4px rgba(0,0,0,.2); /* Subtle shadow for depth */
+    margin-bottom: 25px;
+    margin-top: 25px;
+    padding: 25px 150px;
+    display: block;
+    width: 100%;
+    height: 25%;
+    color: #3f6ce0;
+    font-size: 42px;
+    font-weight: bolder;
+    align-items: center;
+}
+.btn-home:hover {
+    animation: pulse 1s infinite;
+    content: "material-symbols-outlined hover-icon" "arrow_forward";
+}
+
+
+.hover-icon {
+    visibility: hidden;
+}
+
+
+.hover-icon:hover {
+    visibility: visible;
+}
+
+
+.container {
+    max-width: 1200px; /* Adjust as needed */
+    margin-top: 50px; /* Adds some space at the top */
+    padding: 20px; /* Add padding to the container */
+}
+
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        background-color: #0056b3; /* Slightly different shade for smaller screens */
+    }
+}
+
+
+.google-maps {
+    position: relative;
+    margin-top: auto;
+    padding-bottom: 75%; // This is the aspect ratio
+height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Reasons for this app
+--------------------------------------------------------------*/
+#reasons{
+    background: royalblue;
+    padding-bottom: 75px;
+    padding-top: 50px;
+    margin-top: 0;
+}
+
+
+.reasons .icon-box {
+    box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+    padding: 50px 30px;
+    transition: all ease-in-out 0.4s;
+    background: #ffffff;
+    cursor: default;
+    color: royalblue;
+    text-align: center;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+
+.reasons .h4 {
+    box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+    padding: 50px 30px;
+    transition: all ease-in-out 0.4s;
+    background: cyan;
+    cursor: default;
+}
+
+
+.reasons .icon-box .icon {
+    margin-bottom: 10px;
+}
+
+
+.reasons .icon-box .icon i {
+    color: #007bff;
+    font-size: 36px;
+    transition: 0.3s;
+}
+
+
+.reasons .icon-box h4 {
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: royalblue;
+    text-align: center;
+}
+
+
+.reasons .icon-box h4 a {
+    color: #003cff;
+    transition: ease-in-out 0.3s;
+}
+
+
+.reasons .icon-box p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+
+
+}
+
+
+.reasons .icon-box:hover {
+    transform: translateY(-10px);
+}
+
+
+.reasons .icon-box:hover h4 a {
+    color: #278eff;
+}
+
+
+
+
+/*--------------------------------------------------------------
+# LOGIN PAGE
+--------------------------------------------------------------*/
+
+
+#login{
+    background: white;
+}
+#login .h2{
+    color: black;
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Status Boxes
+--------------------------------------------------------------*/
+.status .icon-box {
+    box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+    padding: 25px 40px 5px;
+    transition: all ease-in-out 0.4s;
+    background: #ffffff;
+    cursor: default;
+    color: royalblue;
+    text-align: center;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+
+
+    position: relative;
+
+
+}
+
+
+.status .h4 {
+    box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+    padding: 50px 30px;
+    transition: all ease-in-out 0.4s;
+    background: cyan;
+    cursor: default;
+}
+
+
+.status .icon-box .icon {
+    margin-bottom: 10px;
+}
+
+
+.status .icon-box .icon i {
+    color: #007bff;
+    font-size: 36px;
+    transition: 0.3s;
+}
+
+
+.status .icon-box h4 {
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: royalblue;
+    text-align: center;
+}
+
+
+.status .icon-box- h4 a {
+    color: #003cff;
+    transition: ease-in-out 0.3s;
+}
+
+
+.status .icon-box p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+
+
+}
+
+
+.status .icon-box:hover {
+    transform: translateY(-10px);
+}
+
+
+.status .icon-box:hover h4 a {
+    color: #278eff;
+}
+/* CSS for changing the color of the icon boxes */
+.status .icon-box {
+    /* Default color */
+    background-color: white;
+}
+
+
+/* Green color */
+.status .icon-box.btn-green {
+    background-color: green;
+}
+
+
+/* Red color */
+.status .icon-box.btn-red {
+    background-color: red;
+}
+.floor-image{
+    position: relative;
+    margin-top: 10px;
+    padding-bottom: 75%; // This is the aspect ratio
+height: 0;
+    overflow: hidden;
+}
+
+
+/*--------------------------------------------------------------
+# Floor page buttons
+--------------------------------------------------------------*/
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        background-color: #00fbfc;
+        color: white;
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+        background-color: #00fbfc;
+        color: white;
+    }
+}
+
+
+.btn-floors {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 25px;
+    background-color: #ffffff; /* Blue buttons */
+    border: none; /* Cleaner look without border */
+    box-shadow: 0 2px 4px rgba(0,0,0,.2); /* Subtle shadow for depth */
+    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-right: 20px;
+    padding-left: 40px;
+    color: #3f6ce0;
+    font-size: 30px;
+    font-weight: bolder;
+    align-items: center;
+
+
+}
+.btn-floors:hover {
+    animation: pulse 1s infinite;
+    content: "material-symbols-outlined hover-icon" "arrow_forward";
+}
+
+
+.btn-container .hover-icon {
+    visibility: hidden;
+}
+
+
+.btn-container:hover .hover-icon {
+    visibility: visible;
+}
+
+/*--------------------------------------------------------------
+#LOGIN PAGE
+--------------------------------------------------------------*/
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        /*background-color: #00fbfc;*/
+        color: #000000;
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+        /*background-color: #00fbfc;*/
+        color: #110000;
+    }
+}
+
+
+.btn-login {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 25px;
+    background-color: #ffffff; /* Blue buttons */
+    border: none; /* Cleaner look without border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2); /* Subtle shadow for depth */
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 25px 20px; /* Changed padding for equal space around text */
+    display: flex; /* Use flexbox to center text */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    width: 100%;
+    height: 25%;
+    color: #3f6ce0;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.btn-login:hover {
+    animation: pulse 1s infinite;
+    content: "material-symbols-outlined hover-icon" "arrow_forward";
+}
+
+
+section h2, section h3 {
+    color: black;
+}
+
+
+.btn-green {
+    background-color: green;
+    color: white;
+}
+
+
+.btn-red {
+    background-color: red;
+    color: white;
+}
+.btn-white {
+    background-color: white;
+    color: #3f6ce0; /* Adjust the color as needed */
 }

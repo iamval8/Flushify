@@ -9,27 +9,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav class="navbar">
-    <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Hamburger Menu Icon -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-    </button> -->
-    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class = "loginbtn">Login</button>
+    </button>
 
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <!-- Existing Login Button -->
+            <li class="nav-item">
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" >Login</button>
+            </li>
+            <!-- Google Form Links -->
+            <li class="nav-item">
+                <a class="nav-link" href="https://forms.gle/kLJvkXP5H2JgXGtT8" target="_blank">Emergency Report</a>
+            <li class="nav-item">
+                <a class="nav-link" href="https://forms.gle/DXECfLfSBqzG1aC9A" target="_blank">Restroom Requests</a>
+        </ul>
+    </div>
+
+    <!-- Modal for Login (Unchanged) -->
     <div id="id01" class="modal">
 
         <form class="modal-content animate" action="login.html" method="post">
             <div class="imgcontainer">
                 <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                <img src="img_avatar2.png" alt="Avatar" class="avatar">
             </div>
 
             <div class="container">
                 <label for="uname"><b>Username</b></label>
                 <input type="text" placeholder="Enter Username" name="uname" required>
-
                 <label for="psw"><b>Password</b></label>
                 <input type="password" placeholder="Enter Password" name="psw" required>
-
                 <button type="submit">Login</button>
                 <label>
                     <input type="checkbox" checked="checked" name="remember"> Remember me
