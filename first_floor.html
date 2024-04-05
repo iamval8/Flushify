@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restroom Availability</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+    <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button> -->
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" >Login</button>
+
+    <div id="id01" class="modal">
+
+        <form class="modal-content animate" action="login.html" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="../../../../Flushify/icons/LoginIcon.png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+    </div>
+</nav>
+
+<div class="container text-center mt-5">
+    <div class="section-title">
+        <h2>First Floor</h2>
+    </div>
+
+    <section id="status" class="status">
+        <div class="row justify-content-center">
+            <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                <div class="icon-box" id="first_floor_ab">
+                    <h4><b>A/B Hall</b></h4>
+                    <p>N/A</p>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+                <div class="icon-box" id="first_floor_bc">
+                    <h4><b>B/C Hall</b></h4>
+                    <p>N/A</p>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+                <div class="icon-box" id="first_floor_cd">
+                    <h4><b>C/D Hall</b></h4>
+                    <p>N/A</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="sketchfab-embed-wrapper"> <iframe title="School Hallway" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/2434b4574cd6429fb3559aac2638eee3/embed"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/school-hallway-2434b4574cd6429fb3559aac2638eee3?utm_medium=embed&utm_campaign=share-popup&utm_content=2434b4574cd6429fb3559aac2638eee3" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> School Hallway </a> by <a href="https://sketchfab.com/HH3D?utm_medium=embed&utm_campaign=share-popup&utm_content=2434b4574cd6429fb3559aac2638eee3" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> HH3D </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=2434b4574cd6429fb3559aac2638eee3" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>
+
+    <div class="row justify-content-center">
+        <div class="btn-container">
+            <a href="index.html" class="btn btn-floors">Home <i class="material-symbols-outlined hover-icon">arrow_forward</i></a>
+            <a href="2nd_floor.html" class="btn btn-floors">Next Floor <i class="material-symbols-outlined hover-icon">arrow_forward</i></a>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="Main.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</body>
+</html>
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />

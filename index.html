@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relief Radar</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button> -->
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class = "loginbtn">Login</button>
+
+    <div id="id01" class="modal">
+
+        <form class="modal-content animate" action="login.html" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="LoginIcon.png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+    </div>
+</nav>
+
+<main id = "main" class = "container mt-6">
+    <div class="row">
+        <div class = "col-md-6 text-center">
+            <img src="../../../../Flushify/images/toiletlogo.png" height="430.2" width="300"/>
+        </div>
+        <div class = "col-md-6 text-center">
+            <div class="row">
+                <div class="btn-container">
+                    <a href="first_floor.html" class="btn btn-home">1st Floor <i class="material-symbols-outlined hover-icon">arrow_forward</i></a>
+                    <a href="2nd_floor.html" class="btn btn-home">2nd Floor <i class="material-symbols-outlined hover-icon">arrow_forward</i></a>
+                    <a href="3rd_floor.html" class="btn btn-home">3rd Floor <i class="material-symbols-outlined hover-icon">arrow_forward</i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!-- Why section -->
+<section id="why" class="why section-bg">
+    <div class="container mt-10">
+        <div class="row">
+            <!-- Column for Paragraph -->
+            <div class="col-md-6">
+                <h2>Reasoning:</h2>
+                <p>
+                    We came up  with this app because as current student we noticed many students roaming the halls during class time
+                    this would cause many clusters of students crowding the available restrooms.
+                    Because of this we questioned how will students be able to use the restroom when full of others just trying to skip class.
+                </p>
+                <h2>Add-ons:</h2>
+                <p>
+
+                </p>
+            </div>
+        </div>
+</section><!-- End Why Section -->
+
+
+<!--========== Reason for this app section ==============-->
+<section id="reasons" class="reasons section-bg">
+    <div class="container" data-aos="fade-up">
+        <div class="section-title">
+            <h2><b>Uses for this app</b></h2>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                <div class="icon-box">
+                    <h4><b>Use 1</b></h4>
+                    <p>Teachers will be able to direct their students to the nearest available restrooms leading to less wondering students in the halls.</p>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+                <div class="icon-box">
+                    <h4><b>Use 2</b></h4>
+                    <p>Students will have an easier time finding which restrooms are available as some days different restrooms are oped or closed.</p>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+                <div class="icon-box">
+                    <h4><b>Use 3</b></h4>
+                    <p>This can help AP/Administration find students that want to skip in the restrooms or students that are participating in suspicious activities</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="Main.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</body>
+</html>
